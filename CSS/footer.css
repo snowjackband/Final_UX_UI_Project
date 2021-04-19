@@ -1,0 +1,41 @@
+footer{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    padding:40px 140px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+}
+
+.footer-item{
+    vertical-align: middle;
+}
+
+.footer-links-item{
+    list-style-type: none;
+    font-size: 26px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.social-media{
+    width: 40px;
+    margin: 10.5px;
+}
+
+.contact{
+    text-align: center;
+    vertical-align: middle;
+}
+.contact-text{
+    font-size: 40px;
+    font-weight: bold;
+    color: #EECE57;
+}
+
+.contact-email{
+    font-size: 26px;
+    color: black;
+}
