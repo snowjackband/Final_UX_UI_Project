@@ -64,7 +64,7 @@
     }
     
     .our-programs h1{
-        top:220px;
+        top:280px;
         left: calc(50% - 114.315px);
         font-size: 34px;
     }
@@ -72,17 +72,16 @@
     .our-programs-text{
         box-shadow:none;
         width:100%;
-        background-color:rgba(255, 255, 255, 0);
-        
+        background-color: transparent; 
     }
 
     .our-programs-text p{
         margin:0 40px;
     }
+
     .our-programs-text button{
         display: none;
     }
-
 }
 
 .education-support{
@@ -213,6 +212,132 @@
     margin-right:100px;
 }
 
+@media only screen and (max-width: 600px) {
+    .education-support{
+        flex-direction: column;
+        box-shadow: 0px 5px 8px #00000015;
+        border-radius: 10px;
+    }
+
+    .education-support .education-support-img{
+        width:50%;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; 
+    }
+
+    .education-support .education-support-text{
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .education-support-text h2{
+        font-size: 24px;
+        margin:0 60px;
+    }
+
+    .education-support-text p{
+        margin:0 40px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .school-connect-program{
+        flex-direction: column;
+        box-shadow: 0px 5px 8px #00000015;
+        border-radius: 10px;
+    }
+
+    .school-connect-program .school-connect-img{
+        width:50%;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; 
+    }
+
+    .school-connect-program .school-connect-text{
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .school-connect-text h2{
+        font-size: 24px;
+        margin:0 60px;
+    }
+
+    .school-connect-text p{
+        margin:0 40px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .tutoring-studio{
+        flex-direction: column;
+        box-shadow: 0px 5px 8px #00000015;
+        border-radius: 10px;
+    }
+
+    .tutoring-studio .tutoring-studio-img{
+        width:50%;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; 
+    }
+
+    .tutoring-studio .tutoring-studio-text{
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .tutoring-studio-text h2{
+        font-size: 24px;
+        margin:0 60px;
+    }
+    
+    .tutoring-studio-text p{
+        margin:0 40px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .meals-and-foods{
+        flex-direction: column;
+        box-shadow: 0px 5px 8px #00000015;
+        border-radius: 10px;
+    }
+
+    .meals-and-foods .meals-and-foods-img{
+        width:50%;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px; 
+    }
+
+    .meals-and-foods .meals-and-foods-text{
+        margin-top: 20px;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .meals-and-foods-text h2{
+        font-size: 24px;
+        margin:0 60px;
+    }
+
+    .meals-and-foods-text p{
+        margin:0 40px;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}
+
 /* this is for the fab button */
   .floatingButtonWrap {
       display: block;
@@ -303,5 +428,11 @@
   .floatingMenu li a:hover {
       margin-right: 10px;
       text-decoration: none;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .floatingMenu li a {
+        padding:10px 34px;
+    }
   }
   /* end for the fab button */
