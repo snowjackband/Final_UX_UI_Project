@@ -30,6 +30,7 @@ img.social-media{
     text-align: center;
     vertical-align: middle;
 }
+
 .contact-text{
     font-size: 32px;
     font-weight: bold;
@@ -39,4 +40,33 @@ img.social-media{
 .contact-email{
     font-size: 24px;
     color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    footer{
+        display: block;
+        padding:10%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    img.social-media{
+        width: 24px;
+    }
+
+    .footer-item{
+        margin-bottom: 40px;
+    }
+
+    ul.footer-links{
+        padding-left: 0px;
+    }
+
+    .contact-text{
+        font-size: 18px;
+    }
+    .contact-email{
+        font-size: 16px;
+    }
+
 }
