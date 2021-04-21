@@ -1,3 +1,12 @@
+body{
+    margin:0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../Images/background.png");  
+}
+
 .navigation{
     background-color: white;
     display:flex;
@@ -10,7 +19,18 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .navigation{
+      padding:0 40px;
+  }
 
+  .logo{
+      height:30px !important;
+  }
+
+
+  .hamburger{
+      display: block !important;
+  }
 }
 
 .logo{
@@ -21,12 +41,97 @@
     display: flex;
     padding:0;
     margin:0;
+    align-items: center;
 }
 
 .navigation-item{
-    margin-left:10px;
+    /* margin-left:10px; */
     list-style-type: none;
     color:black;
     font-family: 'Open Sans', sans-serif;
     font-size:20px;
+}
+
+.navigation-item:hover{
+    color:#EECE57;
+    cursor:pointer;
+}
+
+.navigation-item a:hover{
+    color:#EECE57;
+    cursor:pointer;
+}
+
+.line{
+    width:2px;
+    background-color: black;
+    height: 30px;
+}
+
+.horizontal-line{
+    width:100%;
+    background-color: black;
+    height: 2px;
+}
+
+  .navigation a {
+    text-decoration: none;
+  }
+  
+  .navigation ul {
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+  }
+  
+  .navigation li {
+    color:black;
+    background: white;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+  }
+    
+  .navigation li a {
+    color: black;
+  }
+  
+  
+  .navigation li:focus-within a {
+    outline: none;
+  }
+  
+  .navigation ul li ul {
+    background:white;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  .navigation ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+    visibility: visible;
+    opacity: 1;
+    display: block
+  }
+  
+  .navigation ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+  
+  .hamburger{
+    display: none;
+    cursor: pointer;
+    border:none;
+    outline:none;
 }

@@ -1,0 +1,139 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Nhuubala Yugal Education Centre</title>
+  <link rel="shortcut icon" type="image/jpg" href="Images/Logo-no text.svg"/>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="CSS/our programs.css">
+  <link rel="stylesheet" href="CSS/header.css">
+  <link rel="stylesheet" href="CSS/footer.css">
+  <link rel="stylesheet" href="CSS/sidenav.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">  
+</head>
+
+<body>
+  <header class="navigation">
+    <a href="index.html">
+      <img src="Images/Logo.png" alt="logo" class="logo">
+    </a>
+    <ul  class="navigaiton-links">
+      <li class="navigation-item"><a href="#">Our Story</a>
+         <ul class="dropdown">
+        <li><a href="#">The Issue</a></li>
+        <li><a href="#">Our Services</a></li> 
+        <li><a href="#">Our Team</a></li>
+        </ul>
+      </li>
+      <div class="line"></div>
+      <li class="navigation-item"><a href="#">Our Programs</a>
+        <ul class="dropdown">
+            <li><a href="#">Pathways</a></li>
+        </ul>
+      </li>
+      <div class="line"></div>
+      <li class="navigation-item">Blog</li>
+      <div class="line"></div>
+      <li class="navigation-item">Contact Us</li>
+    </ul>
+    <button onclick="openNav()" class="hamburger"><img src="Images/hamburger.svg" alt="hamburger"></button>
+  </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="navigation-link">Home</a>
+    <a href="our story.html" class="navigation-link">Our Story</a>
+    <a href="our program.html" class="navigation-link">Our Programs</a>
+    <a href="/" class="navigation-link">Our Team</a>
+    <a href="/" class="navigation-link">Contact Us</a>
+    <a href="/" class="navigation-link">Blog</a>
+</div>
+
+  <section class="hero">
+      <div class="our-programs">
+          <img src="Images/hero-img.png" alt="our-program-img" class="our-program-img">
+          <h1>Our Programs</h1>
+      </div>
+
+      <div class="our-programs-text">
+          <p>Nhuubala Yugal Education Centre changes and shapes young lives. The work we do is aimed at providing a holistic approach to solving some of the biggest challenges faced by rural youth. By utilising community, culture and connection, we offer services that empower young people to take charge of their lives.</p>
+          <button>Pathways</button>
+      </div>
+  </section>
+
+<section class="programs">
+    <div class="education-support">
+        <img src="Images/eudcation-support.png" alt="education-support-mentoring" class="education-support-img">
+        <div class="education-support-text">
+            <h2>Education Support Mentoring</h2>
+            <p>With our organisation’s mission always in mind, we strive to put community at the centre of our students’ educational experiences. Our Centre utilises individualised curriculums and offers students the opportunity to learn with mentors in a supportive and culturally sensitive environment. 
+                <br>
+                <br>
+                For more information about options for students undertaking our Education Support Mentoring Program, please visit the ‘Pathways’ page.
+            </p>
+        </div>
+    </div>
+
+    <div class="school-connect-program">
+        <img src="Images/school-connect.png" alt="school-connect-program" class="school-connect-img">
+        <div class="school-connect-text">
+            <h2>School Connect Program</h2>
+            <p>Connection is one of our fundamental values. With this initiative, our goal is to promote connection and positive relationship building. 
+                <br>
+                <br>
+                Through a daily pick up and drop off service, we facilitate meaningful conversation, enabling students to build relationships of trust with each other and with mentors. Through this program, we also provide children with packed lunches to support their day of learning.</p>
+        </div>
+    </div>
+    
+    <div class="tutoring-studio">
+        <img src="Images/tutoring-studio.png" alt="tutoring-studio" class="tutoring-studio-img">
+        <div class="tutoring-studio-text">
+            <h2>Tutoring Studio</h2>
+            <p>With access to the right resources, young people can become empowered by their own abilities and gain the confidence to fulfill their potential. 
+                <br>
+                <br>
+                That’s why we also offer tutoring services for students enrolled at local schools. By employing a relational approach, mentors build connections with students and provide a positive learning experience.
+            </p>
+        </div>
+    </div>
+
+    <div class="meals-and-foods">
+        <img src="Images/meals.png" alt="meals-and-foods-runs" class="meals-and-foods-img">
+        <div class="meals-and-foods-text">
+            <h2>Meals and Food Runs</h2>
+            <p>One of our key goals is to facilitate a positive culture around education and learning, and with this initiative, mentors and students take a break from learning by sharing a meal.
+                <br>
+                <br>
+                Through shared meals and food runs, we ensure that young people in the community have access to nutritious food and thereby the energy to strive towards their dreams.
+                </p>
+        </div>
+    </div>
+
+<!-- this is for the fab button -->
+<div class="floatingButtonWrap">
+    <div class="floatingButtonInner">
+        <a href="#" class="floatingButton">
+            <img src="Images/fab.svg" alt="fab" class="fab fa fa-plus">
+        </a>
+        <ul class="floatingMenu">
+            <li>
+                <a href="#">Donate</a>
+            </li>
+            <li>
+                <a href="#">Sponsor a Child</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="fab.js"></script>
+<script src="sidenav copy.js"></script>
+</body>
+
+</html>
