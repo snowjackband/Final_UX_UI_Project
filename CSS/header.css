@@ -11,26 +11,30 @@ body{
     background-color: white;
     display:flex;
     position:sticky;
+    top:0;
     justify-content:space-between;
     align-items:center; 
     padding:0 140px;
     height:100px;
     box-shadow: 0px 5px 8px #00000015;
+    z-index: 100;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     .navigation{
       padding:0 40px;
+      height:150px;
   }
 
-  .logo{
-      height:30px !important;
+  .navigaiton-links{
+    display: none !important;
   }
-
 
   .hamburger{
       display: block !important;
+
   }
+
 }
 
 .logo{
@@ -45,11 +49,18 @@ body{
 }
 
 .navigation-item{
-    /* margin-left:10px; */
+    margin-left:10px;
     list-style-type: none;
     color:black;
     font-family: 'Open Sans', sans-serif;
     font-size:20px;
+    color:black;
+    background: white;
+    /* display: block;
+    float: left; */
+    padding: 1rem;
+    /* position: relative; */
+    text-decoration: none;
 }
 
 .navigation-item:hover{
@@ -63,29 +74,34 @@ body{
 }
 
 .line{
-    width:2px;
+    width: 2px;
     background-color: black;
     height: 30px;
 }
 
-.horizontal-line{
-    width:100%;
-    background-color: black;
-    height: 2px;
-}
-
   .navigation a {
     text-decoration: none;
+    color: black;
   }
+
+  .hamburger{
+    display: none;
+    cursor: pointer;
+    border:none;
+    outline:none;
+    background-color: transparent;
+}
+
   
-  .navigation ul {
+  /* .navigation ul {
     background: white;
     list-style: none;
     margin: 0;
     padding-left: 0;
   }
-  
-  .navigation li {
+   */
+
+  /* .navigation li {
     color:black;
     background: white;
     display: block;
@@ -93,18 +109,18 @@ body{
     padding: 1rem;
     position: relative;
     text-decoration: none;
-  }
+  } */
     
-  .navigation li a {
+  /* .navigation li a {
     color: black;
-  }
+  } */
   
   
-  .navigation li:focus-within a {
+  /* .navigation li:focus-within a {
     outline: none;
-  }
+  } */
   
-  .navigation ul li ul {
+  /* .navigation ul li ul {
     background:white;
     visibility: hidden;
     opacity: 0;
@@ -114,8 +130,8 @@ body{
     left: 0;
     display: none;
   }
-  
-  .navigation ul li:hover > ul,
+   */
+  /* .navigation ul li:hover > ul,
   ul li:focus-within > ul,
   ul li ul:hover,
   ul li ul:focus {
@@ -128,10 +144,6 @@ body{
     clear: both;
     width: 100%;
   }
+   */
+   
   
-  .hamburger{
-    display: none;
-    cursor: pointer;
-    border:none;
-    outline:none;
-}

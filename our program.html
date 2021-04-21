@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="CSS/footer.css">
   <link rel="stylesheet" href="CSS/sidenav.css">
+  <link rel="stylesheet" href="CSS/footer.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">  
 </head>
@@ -23,18 +24,18 @@
       <img src="Images/Logo.png" alt="logo" class="logo">
     </a>
     <ul  class="navigaiton-links">
-      <li class="navigation-item"><a href="#">Our Story</a>
-         <ul class="dropdown">
+      <li class="navigation-item"><a href="our story.html">Our Story</a>
+         <!-- <ul class="dropdown">
         <li><a href="#">The Issue</a></li>
         <li><a href="#">Our Services</a></li> 
         <li><a href="#">Our Team</a></li>
-        </ul>
+        </ul> -->
       </li>
       <div class="line"></div>
-      <li class="navigation-item"><a href="#">Our Programs</a>
-        <ul class="dropdown">
+      <li class="navigation-item"><a href="our program.html">Our Programs</a>
+        <!-- <ul class="dropdown">
             <li><a href="#">Pathways</a></li>
-        </ul>
+        </ul> -->
       </li>
       <div class="line"></div>
       <li class="navigation-item">Blog</li>
@@ -47,8 +48,14 @@
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a href="index.html" class="navigation-link">Home</a>
+    <div class="drop">
     <a href="our story.html" class="navigation-link">Our Story</a>
+    <img src="Images/down.svg" alt="down" class="down">
+    </div>
+    <div class="drop2">
     <a href="our program.html" class="navigation-link">Our Programs</a>
+    <img src="Images/down.svg" alt="down" class="down2">
+    </div>
     <a href="/" class="navigation-link">Our Team</a>
     <a href="/" class="navigation-link">Contact Us</a>
     <a href="/" class="navigation-link">Blog</a>
@@ -130,6 +137,32 @@
         </ul>
     </div>
 </div>
+
+<!--Footer-->
+<footer>
+    <!--Quick Links-->
+    <ul class="footer-links footer-item">
+      <li class="footer-links-item bold">Our Story</li>
+      <li class="footer-links-item">The Issues</li>
+      <li class="footer-links-item">Our Services</li>
+      <li class="footer-links-item">Our Team</li>
+      <li class="footer-links-item bold">Our Programs</li>
+      <li class="footer-links-item">Pathways</li>
+      <li class="footer-links-item bold">Blog</li>
+    </ul>
+    <!--Contact-->
+    <div class="footer-item contact">
+      <h2 class="contact-text">We'd love to hear from you!</h2>
+      <h3 class="contact-email">team@nhuubalayugal.org</h3>
+    </div>
+    <!--Social Media links-->
+    <div class="footer-item">
+      <img src="images/facebook.png" class="social-media">
+      <img src="images/linkedin.png" class="social-media">
+      <img src="images/instagram.png" class="social-media">
+      <img src="images/twitter.png" class="social-media">
+    </div>
+  </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="fab.js"></script>

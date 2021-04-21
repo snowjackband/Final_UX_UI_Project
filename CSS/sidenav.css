@@ -6,31 +6,33 @@
     z-index: 100; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
-    background-color:black; /* Black*/
+    background-color:#EECE57;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 100px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
     
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:baseline; */
   }
 
   
   /* The navigation menu links */
   .sidenav a {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    margin-left: 40px;
     text-decoration: none;
     font-size: 24px;
-    color:rgba(255,255,255,0.6);
+    color:black;
     display: block;
     transition: 0.3s;
-    font-family:"Lato", sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
   }
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color:white;
+    
   }
   
   /* Position and style the close button (top right corner) */
@@ -54,4 +56,22 @@
     .sidenav a {font-size: 18px;}
   }
 
-  
+  .drop{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+.down{
+  margin-left: 300px; 
+  }
+
+  .drop2{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .down2{
+    margin-left: 248px; 
+    }
