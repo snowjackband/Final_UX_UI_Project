@@ -509,8 +509,13 @@ Just try to stick with the original design as close as possible
     text-decoration: none;
 }
 
+
 @media only screen and (max-width: 600px) {
   .floatingMenu li a {
       padding:10px 34px;
+  }
+
+  section{
+      display: block;
   }
 }
