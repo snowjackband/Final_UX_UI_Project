@@ -65,8 +65,8 @@
     
     .our-programs h1{
         top:280px;
-        left: calc(50% - 114.315px);
-        font-size: 34px;
+        left: calc(50% - 121.04px);
+        font-size: 36px;
     }
 
     .our-programs-text{
@@ -266,7 +266,7 @@
 
     .school-connect-text h2{
         font-size: 24px;
-        margin:0 60px;
+        margin:0 30px;
     }
 
     .school-connect-text p{

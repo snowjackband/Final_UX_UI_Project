@@ -187,3 +187,102 @@ img.card-image{
     
 
   }
+
+  /* this is for the fab button */
+  .floatingButtonWrap {
+    display: block;
+    position: fixed;
+    bottom: 45px;
+    right: 30px;
+    z-index: 99;
+}
+
+.floatingButtonInner {
+    position: relative;
+}
+
+.floatingButton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #EECE57;
+    color: #fff;
+    line-height: 50px;
+    position: absolute;
+    border-radius: 50% 50%;
+    bottom: 0px;
+    right: 0px;
+    /* opacity: 0.3; */
+    opacity: 1;
+    transition: all 0.4s;
+    box-shadow: 0px 5px 8px #00000015;
+}
+
+.floatingButton .fab {
+    width:60% !important;
+    margin-top:9px;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+    opacity: 1;
+    color: #fff;
+}
+
+
+.floatingButton .fab {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.floatingButton.open .fab {
+    transform: rotate(270deg);
+}
+
+.floatingMenu {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    /* width: 200px; */
+    display: none;
+}
+
+.floatingMenu li {
+    width: 100%;
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.floatingMenu li a {
+    padding: 20px 68px;
+    display: inline-block;
+    background: #EECE57;
+    color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s;
+    text-decoration: none;
+    box-shadow: 0px 8px 8px #0000002c;
+    white-space: nowrap;
+}
+
+.floatingMenu li a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .floatingMenu li a {
+      padding:10px 34px;
+  }
+}
+/* end for the fab button */

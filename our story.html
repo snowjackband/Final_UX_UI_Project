@@ -5,29 +5,13 @@
 <head>
   <meta charset="utf-8">
   <title>Nhuubala Yugal Education Centre</title>
-  <link rel="shortcut icon" type="image/jpg" href=""/>
-  <meta name="description" content="The HTML5 Herald">
-  <meta name="author" content="SitePoint">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--CSS Style Sheet-->
-  <link rel="stylesheet" href="CSS/style.css">
-</head>
-
-<body>
-  <!doctype html>
-
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Nhuubala Yugal Education Centre</title>
   <link rel="shortcut icon" type="image/jpg" href="Images/Logo-no text.svg"/>
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/style.css">
   <link rel="stylesheet" href="CSS/header.css">
   <link rel="stylesheet" href="CSS/ourStory.css">
+  <link rel="stylesheet" href="CSS/sidenav.css">
   <link rel="stylesheet" href="CSS/footer.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">  
@@ -39,15 +23,42 @@
       <img src="Images/Logo.png" alt="logo" class="logo">
     </a>
     <ul  class="navigaiton-links">
-      <li class="navigation-item">Our Story</li>
-      <li class="navigation-item">|</li>
-      <li class="navigation-item">Our Programs</li>
-      <li class="navigation-item">|</li>
+      <li class="navigation-item"><a href="our story.html">Our Story</a>
+         <!-- <ul class="dropdown">
+        <li><a href="#">The Issue</a></li>
+        <li><a href="#">Our Services</a></li> 
+        <li><a href="#">Our Team</a></li>
+        </ul> -->
+      </li>
+      <div class="line"></div>
+      <li class="navigation-item"><a href="our program.html">Our Programs</a>
+        <!-- <ul class="dropdown">
+            <li><a href="#">Pathways</a></li>
+        </ul> -->
+      </li>
+      <div class="line"></div>
       <li class="navigation-item">Blog</li>
-      <li class="navigation-item">|</li>
+      <div class="line"></div>
       <li class="navigation-item">Contact Us</li>
     </ul>
+    <button onclick="openNav()" class="hamburger"><img src="Images/hamburger.svg" alt="hamburger"></button>
   </header>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="navigation-link">Home</a>
+    <div class="drop">
+    <a href="our story.html" class="navigation-link">Our Story</a>
+    <img src="Images/down.svg" alt="down" class="down">
+    </div>
+    <div class="drop2">
+    <a href="our program.html" class="navigation-link">Our Programs</a>
+    <img src="Images/down.svg" alt="down" class="down2">
+    </div>
+    <a href="/" class="navigation-link">Our Team</a>
+    <a href="/" class="navigation-link">Contact Us</a>
+    <a href="/" class="navigation-link">Blog</a>
+</div>
 
   <!--Our Story-->
   <!--Hero-->
@@ -156,6 +167,23 @@
         </div>
     </div>
 
+    <!-- this is for the fab button -->
+<div class="floatingButtonWrap">
+  <div class="floatingButtonInner">
+      <a href="#" class="floatingButton">
+          <img src="Images/fab.svg" alt="fab" class="fab fa fa-plus">
+      </a>
+      <ul class="floatingMenu">
+          <li>
+              <a href="#">Donate</a>
+          </li>
+          <li>
+              <a href="#">Sponsor a Child</a>
+          </li>
+      </ul>
+  </div>
+</div>
+
   <!--Footer-->
   <footer class="footer-container">
     <!--Quick Links-->
@@ -183,6 +211,10 @@
       <img src="images/twitter.png" class="social-media">
     </div>
   </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="fab.js"></script>
+<script src="sidenav copy.js"></script>
 </body>
 
 </html>

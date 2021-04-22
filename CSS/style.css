@@ -1,3 +1,21 @@
+/*  
+
+Some key measurements for the mobile design :
+
+h1: 36px (maybe?);
+h2: 36px;
+h3: 24px;
+p: 16px;
+button: 16px;
+width:85% (just keep 85% for consistency)
+
+Just try to stick with the original design as close as possible
+
+
+
+*/
+
+/* hero section */
 .homepage-hero .homepage-hero-img{
     margin-top: 30px;
     width:85%;
@@ -42,6 +60,7 @@
     text-align: center;
     background-color: white;
     box-shadow: 0px 5px 8px #00000015;
+    border-radius: 10px;
 }
 
 .our-mission h2{
@@ -53,9 +72,179 @@
 .our-mission p{
     font-size: 30px;
     padding:0 200px;
+    font-family: 'Open Sans', sans-serif;
 }
 
-button{
+/* Sponsor a student */
+.sponsorship-student{
+    text-align: center;
+}
+
+.sponsorship-student h2{
+    padding-top:60px;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sponsorship-student .sponsorship-student-wrapper{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sponsorship-student-wrapper .matt{
+    background-color: white;
+    box-shadow: 0px 5px 8px #00000015;
+    border-radius: 10px;
+}
+
+.matt .avator-matt{
+    width:60%;
+    padding-top:60px;
+}
+
+.matt h3{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.matt p{
+    padding:0 60px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.sponsorship-student-wrapper .jessica{
+    background-color: white;
+    box-shadow: 0px 5px 8px #00000015;
+    border-radius: 10px;
+}
+
+.jessica .avator-jessica{
+    width:60%;
+    padding-top:60px;
+}
+
+.jessica h3{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.jessica p{
+    padding:0 60px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.sponsorship-student-wrapper .grace{
+    background-color: white;
+    box-shadow: 0px 5px 8px #00000015;
+    border-radius: 10px;
+}
+
+.grace .avator-grace{
+    width:60%;
+    padding-top:60px;
+}
+
+.grace h3{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif; 
+}
+
+.grace p{
+    padding:0 60px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+/* What your sponsorship means */
+.sponsorship-meaning{
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 5px 8px #00000015;
+    border-radius: 10px;
+}
+
+.sponsorship-meaning h2{
+    padding-top:60px;
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sponsorship-meaning .meaning{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.meaning-education .educaton-mentor-img{
+    width:30%;
+    padding-top:30px;
+}
+
+.meaning-education h3{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.meaning-education p{
+    padding:0 60px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px;
+}
+
+.meaning-transport .transport-img{
+    width:30%;
+    padding-top:30px;
+}
+
+.meaning-transport h3{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.meaning-transport p{
+    padding:0 60px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px; 
+}
+
+.meaning-resources .resources-img{
+    width:30%;
+    padding-top:30px;
+}
+
+.meaning-resources h3{
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.meaning-resources p{
+    padding:0 60px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 10px; 
+}
+
+#text{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin:10px 200px 30px 200px;
+}
+
+/* button */
+.yellow-button{
     width:100%;
     max-width:200px;
     padding:15px 0;
@@ -73,6 +262,104 @@ button{
     box-shadow: 0px 5px 8px #00000015;
 }
 
-button:hover{
+.yellow-button:hover{
     box-shadow: 0px 8px 8px #0000002c;
+}
+
+/* this is for the fab button */
+.floatingButtonWrap {
+    display: block;
+    position: fixed;
+    bottom: 45px;
+    right: 30px;
+    z-index: 99;
+}
+
+.floatingButtonInner {
+    position: relative;
+}
+
+.floatingButton {
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    background: #EECE57;
+    color: #fff;
+    line-height: 50px;
+    position: absolute;
+    border-radius: 50% 50%;
+    bottom: 0px;
+    right: 0px;
+    /* opacity: 0.3; */
+    opacity: 1;
+    transition: all 0.4s;
+    box-shadow: 0px 5px 8px #00000015;
+}
+
+.floatingButton .fab {
+    width:60% !important;
+    margin-top:9px;
+}
+
+.floatingButton.open,
+.floatingButton:hover,
+.floatingButton:focus,
+.floatingButton:active {
+    opacity: 1;
+    color: #fff;
+}
+
+
+.floatingButton .fab {
+    transform: rotate(0deg);
+    transition: all 0.4s;
+}
+
+.floatingButton.open .fab {
+    transform: rotate(270deg);
+}
+
+.floatingMenu {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    /* width: 200px; */
+    display: none;
+}
+
+.floatingMenu li {
+    width: 100%;
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size:16px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.floatingMenu li a {
+    padding: 20px 68px;
+    display: inline-block;
+    background: #EECE57;
+    color: black;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.4s;
+    text-decoration: none;
+    box-shadow: 0px 8px 8px #0000002c;
+    white-space: nowrap;
+}
+
+.floatingMenu li a:hover {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .floatingMenu li a {
+      padding:10px 34px;
+  }
 }
