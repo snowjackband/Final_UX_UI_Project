@@ -33,21 +33,23 @@ p{
 
 .hero{
     width: 85%;
-    height: 200px;
     background-size: cover;
-    background-image: url(../Images/ourStoryHero.png);
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
     margin-bottom: 0px;
 }
 .hero-text{
-    position: relative;
-    top: 50%;
-    left: calc(50% - 13%);
+    position: absolute;
+    top: 35%;
+    left: calc(50% - 8%);
     font-family: Helvetica;
     color: white;
     font-size: 40px;
+}
+
+.hero-image{
+    width: 100%;
 }
 
 .ourStory-hero-container{
@@ -123,15 +125,53 @@ img.card-image{
     padding-right: 40px;
 }
 
-@media only screen and (max-width: 600px) {
+button.learnMore{
+    width:100%;
+    max-width:160px;
+    padding:15px 0;
+    border-radius:5px;
+    color:black;
+    background-color:#EECE57;
+    font-size:16px;
+    cursor:pointer;
+    align-self: center;
+    outline:none;
+    text-decoration: none;
+    border:none;
+    font-weight: 600;
+    margin-bottom: 60px;
+    box-shadow: 0px 5px 8px #00000015;
+}
+
+button.learnMore:hover{
+    box-shadow: 0px 8px 8px #0000002c;
+}
+
+@media only screen and (max-width: 600px){
     body{
         background-color: white;
         background-image: none;
+    }
+    h1{
+        font-size: 36px;
+    }
+    h2{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+    } 
+    h3{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
     }
     .card-item{
         display: block;
         width: 100%;
         align-items: center;
+    }
+    p{
+        font-size: 16px;
     }
     .card-item-block{
         display: block;
@@ -145,13 +185,14 @@ img.card-image{
     }
     .card-container{
         align-items: center;
+        margin: 0px;
     }
 
     .story-container{
-        width: 75%;
+        width: 85%;
+        padding: 12px;
         margin-left: auto;
         margin-right: auto;
-        padding: 0px;
         margin-top: 30px;
         background-color: white;
         box-shadow: 0px 5px 8px #00000015;
@@ -159,39 +200,54 @@ img.card-image{
     }
     .ourStory-hero-container{
         width: 100%;
-        padding: 10%;
+        padding: 0;
+        box-shadow: none;
     }
+
     .hero{
         width: 100%;
         padding: none;
         margin-top: 0px;
     }
     .hero-text{
-        position: relative;
-        top: 30%;
-        left: calc(50% - 25%);
+        position: absolute;
+        top: 40%;
+        left: calc(50% - 20%);
         font-family: Helvetica;
         color: white;
         font-size: 40px;
     }
+    .hero-image{
+        width:100%;
+        height: 350px;
+        object-fit: cover;
+        margin-top:0;
+    }
     .left{
         display: block;
-        width: 100%;
+        width: 85%;
         text-align: center;
+        padding: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .right{
         display: block;
-        width: 90%;
+        width: 85%;
         margin-right: 0px;
         text-align: center;
         float: none;
+        padding: 5%;
+        margin-left: auto;
+        margin-right: auto;
     }
     img.card-image{
         width: 80%;
     }
     .content-who{
-        align-items: center;
-    }
+        align-items: left;
+        padding: 0px;
+    }rt
     
 
   }
