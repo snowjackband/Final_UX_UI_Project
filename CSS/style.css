@@ -75,6 +75,50 @@ Just try to stick with the original design as close as possible
     font-family: 'Open Sans', sans-serif;
 }
 
+@media only screen and (max-width: 600px) {
+    .homepage-hero .homepage-hero-img{
+        width:100%;
+        height:350px;
+        object-fit: cover;
+        margin-top: 0;
+        border-radius: 0;
+    }
+
+    .text-wrapper h1{
+        top:180px;
+        left: 20px;
+        font-size: 30px;
+        line-height:30px ;
+    }
+
+    .text-wrapper p{
+        top:290px;
+        left:20px;
+        font-size:14px;
+    }
+
+    .text-wrapper button{
+        top:380px;
+        left:20px;
+    }
+
+    .our-mission{
+        box-shadow:none;
+        width:100%;
+        background-color: transparent;
+    }
+
+    .our-mission h2{
+        font-size:30px;
+        padding-top:30px;
+    }
+    .our-mission p{
+        font-size:16px;
+        padding: 0 40px;
+
+    }
+}
+
 /* Sponsor a student */
 .sponsorship-student{
     text-align: center;
@@ -164,6 +208,62 @@ Just try to stick with the original design as close as possible
     padding-bottom: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+    .sponsorship-student h2{
+        padding-top:30px;
+        font-size:30px;
+    }
+
+    .sponsorship-student .sponsorship-student-wrapper{
+        grid-template-rows: 30% 30% 30% !important;
+        grid-template-columns: 1fr;
+        grid-row-gap: 30px;
+        grid-column-gap:0;
+    }
+
+    .matt .avator-matt{
+        width:50%;
+        padding-top:30px;
+    }
+
+    .matt h3{
+        font-size: 24px;
+    }
+
+    .matt p{
+        padding:0 40px;
+        padding-bottom: 20px;
+    }
+
+    .jessica .avator-jessica{
+        width:50%;
+        padding-top:30px;
+    }
+    
+    .jessica h3{
+        font-size: 24px;
+    }
+
+    .jessica p{
+        padding:0 40px;
+        padding-bottom: 20px;
+    }
+
+    .grace .avator-grace{
+        width:50%;
+        padding-top:30px;
+    }
+
+    .grace h3{
+        font-size: 24px;
+    }
+
+    .grace p{
+        padding:0 40px;
+        padding-bottom: 20px;
+    }
+}
+
 /* What your sponsorship means */
 .sponsorship-meaning{
     width: 85%;
@@ -243,6 +343,24 @@ Just try to stick with the original design as close as possible
     margin:10px 200px 30px 200px;
 }
 
+@media only screen and (max-width: 600px) {
+    .sponsorship-meaning h2{
+        padding-top:30px;
+        font-size:30px;
+    }
+
+    .sponsorship-meaning .meaning{
+        grid-template-rows: 30% 30% 30%;
+        grid-template-columns: 1fr;
+        grid-row-gap:30px;
+    }
+
+    #text{
+        font-size: 16px;
+        font-family: 'Open Sans', sans-serif;
+        margin:0 40px 40px 40px;
+}
+
 /* button */
 .yellow-button{
     width:100%;
@@ -287,6 +405,18 @@ Just try to stick with the original design as close as possible
     color:white;
     text-shadow: 4px 4px 4px #00000015;
 }
+
+@media only screen and (max-width: 600px) {
+   .yellow-button{
+
+   }
+   
+    #hero-button{
+        max-width:150px!important;
+        font-size: 14px!important;
+   }
+}
+
 /* this is for the fab button */
 .floatingButtonWrap {
     display: block;
